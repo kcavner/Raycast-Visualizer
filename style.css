@@ -1,0 +1,118 @@
+*{
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+        margin: 0;
+        background-image: url(./2217435.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 100%;
+    
+   
+}
+
+    
+canvas { 
+    background: rgba(0, 0, 0, 0.636);
+    display: flex;
+    margin: 0 auto;
+    backdrop-filter: blur(3px);
+    width: 40%;
+    
+    animation: rainbow-bg 25s linear;
+    animation-iteration-count: infinite;
+    margin-top: 1%;
+    border-radius: 10PX;
+    
+     
+}
+@keyframes rainbow-bg{
+    100%,0%{
+        box-shadow:0px 0px 10px 5px inset rgb(255,0,0);
+    }
+    8%{
+        box-shadow:0px 0px 20px 5px inset rgb(255,127,0);
+    }
+    16%{
+        box-shadow:0px 0px 10px 5px inset rgb(255,255,0);
+    }
+    25%{
+        box-shadow:0px 0px 20px 5px inset rgb(127,255,0);
+    }
+    33%{
+        box-shadow:0px 0px 10px 5px inset rgb(0,255,0);
+    }
+    41%{
+        box-shadow:0px 0px 20px 5px inset rgb(0,255,127);
+    }
+    50%{
+        box-shadow:0px 0px 10px 5px inset rgb(0,255,255);
+    }
+    58%{
+        box-shadow:0px 0px 20px 5px inset rgb(0,127,255);
+    }
+    66%{
+        box-shadow:0px 0px 10px 5px inset rgb(0,0,255);
+    }
+    75%{
+        box-shadow:0px 0px 20px 5px inset rgb(127,0,255);
+    }
+    83%{
+        box-shadow:0px 0px 10px 5px inset rgb(255,0,255);
+    }
+    91%{
+        box-shadow:0px 0px 20px 5px inset rgb(255,0,127);
+    }
+}
+.epi{
+    width: 100%;
+    font-size: 3rem;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top: -20rem;
+    
+}
+
+div{
+    position: absolute;
+    color: aliceblue;
+    font-size: 2rem;
+    top: 400px;
+    background-color: rgba(240, 248, 255, 0);
+    background-image: none;
+    
+    
+    
+}
+
+
+
+
+button{
+    color: rgb(255, 255, 255);
+    animation: rainbow-bg 20s linear;
+    animation-iteration-count: infinite;
+    padding: .2rem;
+    display: flex;
+    border: 0px;
+    margin: .2rem;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.636);
+    width: 5%;
+    font-size: 1rem;
+    
+}
+@media screen and (max-width: 500px){
+canvas{
+    width: 100%;
+}
+}
+    
