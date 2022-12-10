@@ -66,3 +66,9 @@ function start(){
                 loop();  
         }, rand);
     }());
+    
+    document.addEventListener("click", () => {
+        document.documentElement.requestFullscreen().catch((e) => {
+            console.log(e);
+        });
+        });
