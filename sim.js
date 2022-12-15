@@ -7,8 +7,6 @@ var dx = 5;
 var dy = -5;
 
 
-
-
 function drawBall() {
     // ctx.beginPath()
     ctx.arc(x, y, ballRadius, 1, Math.PI*1); 
@@ -33,18 +31,7 @@ function drawBall() {
     y += dy;
  
 }
-// // Animate the color of the ball
-// setInterval(function() {
-//     // Generate a random color
-//     var color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
   
-//     // Update the color of the ball
-//     ctx.fillStyle = color;
-//   }, 250); // Update the color every 100 milliseconds
-
-
-
-   
 function start(){
     setInterval(draw);
     $(".epi").css({
